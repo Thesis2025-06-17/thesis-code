@@ -5,8 +5,12 @@ import statistics
 import numpy as np
 from functools import reduce
 import plotly.express as px
+import plotly.io as pio
 import pandas as pd
 from itertools import product
+
+colors = ["#636EFA", "#32DC43", "#FB0D0D", "#332288", "#E4DA21", "#C41899"]
+pio.templates["plotly"].layout.colorway = colors
 
 responses = []
 with open("SurveyValid.csv", "r") as file:
